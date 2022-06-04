@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>Animating shapes</title>
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-plane id="ground" color="black" position="0 0 0" rotation="-90 0 0" width="20" height="10" ></a-plane> <!-- antenna --> 
+        <a-circle position="0 9.15 0" color="orange" radius="0.8" material="side: double" > </a-circle> 
+        <a-cylinder color="#757575" height="1.5" radius="0.05" position="0 11 0" animation="property: position; from:-0.2 10.4 -0.1;to: 0.2 10.4 -0.1;dir:alternate;loop: true; dur: 1000;" ></a-cylinder> 
+        <a-sphere color="#ef5350" radius="0.3" position="0 11 0" animation="property: position; from:-0.2 11 -0.1;to: 0.2 11 -0.1;dir:alternate;loop: true; dur: 1000;" ></a-sphere>
+
+    <a-box id="head" color="#0276aa" position="0 8 0" width="3.2" height="2.2" > </a-box> <!-- Eyes --> 
+    <a-sphere color="#fff" position="-1 8.3 0.2" radius="0.6" rotation="0 10 0" > </a-sphere> 
+    <a-sphere color="#000" radius="0.15" position="-0.63 8.1 0.9" animation="property: position; from:-0.63 8.1 0.9;to: -0.63 8.3 0.9;dir:alternate;loop: true; dur: 1000;" ></a-sphere>
+
+    <a-sphere color="#fff" position="1 8.3 0.2" radius="0.6" rotation="0 10 0" > </a-sphere> 
+    <a-sphere color="#000" radius="0.15" position="-0.63 8.1 0.9" animation="property: position; from:-0.63 8.1 0.9;to: -0.63 8.3 0.9;dir:alternate;loop: true; dur: 1000;" ></a-sphere>
+
+    <a-box id="body" color="blue" position="0 3 0" width="2.5" height="8"
+    <a-box id="arm" color="red" position="0 3 0" width="2.5" height="5" 
+        <a-camera look-controls-enabled wasd controls-enabled position="0 5 15">
+
+        </a-camera>
+        </a-box>
+       
+
+        </a-scene>
+        
+</body>
+</html>
